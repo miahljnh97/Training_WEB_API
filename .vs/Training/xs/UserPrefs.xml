@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{4777EADE-48F6-46E8-A806-64493D06E9B4}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Model/UserRequest.cs">
+    <Files>
+      <File FileName="Program.cs" Line="1" Column="1" />
+      <File FileName="Controllers/WeatherForecastController.cs" Line="38" Column="10" />
+      <File FileName="Controllers/ContactController.cs" Line="20" Column="28" />
+      <File FileName="Model/UserRequest.cs" Line="10" Column="13" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Training" expanded="True">
+            <Node name="Training" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Model" expanded="True">
+                <Node name="UserRequest.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Training PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
