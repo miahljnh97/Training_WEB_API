@@ -80,12 +80,5 @@ namespace Training.Controllers
         {
             return Ok(Users.RemoveAll(k => k.Id == id));
         }
-
-        //[HttpPatch]
-        //public IActionResult UpdateUser(UserRequest user, int id)
-        //{
-
-        //}
-
     }
 }

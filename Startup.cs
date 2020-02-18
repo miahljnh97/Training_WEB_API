@@ -4,12 +4,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Training.Middleware;
 
 namespace Training
 {
@@ -36,7 +38,26 @@ namespace Training
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
+            //app.Use(async (context, next) =>
+            //{
+            //    if (context.Request.Headers["Authorization"] == "langit biru")
+            //    {
+            //        await next();
+            //        return;
+            //    }
+            //    var text = "Not Authorize";
+
+            //    var data = System.Text.Encoding.UTF8.GetBytes(text);
+            //    await context.Response.Body.WriteAsync(data, 0, data.Length);
+            //    //Console.WriteLine("Not Authorize");
+            //});
+            // sudah dipindah ke file authmiddleware.cs kemudian diganti
+
+            //app.UseMiddleware<CustomAuthMiddleware>();
+            //selain itu bisa juga pake  ini, extension method
+
+            app.UseCustomAuthMiddleware();
+
 
             app.UseRouting();
 
